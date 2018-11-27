@@ -1,0 +1,17 @@
+%option noyywrap
+%{
+	#include<stdio.h>
+%}
+
+%%
+"if"|"do"|"main"|"else"|"switch"|"int"|"string"|"return"|"printf" {printf("Keyword\t");}
+[A-Za-z][a-z][0-9]* {printf("Indentifier\t");}
+[0-9]* {printf("Number\t");}
+"!"|"#"|"("|")"|"@"|"&" {printf("Symbole\t");}
+"+"|"-"|"*"|"/"|"="|"%" {printf("Operator\t");}
+%%
+int main()
+{
+
+	return 0;
+}

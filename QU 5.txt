@@ -1,0 +1,21 @@
+%option noyywrap
+%{
+	#include<stdio.h>
+
+%}
+
+%%
+
+%%
+
+int yywarp()
+{
+return 1;
+}
+
+int main()
+{
+printf("Enter a number: ");
+yylex();
+return 0;
+}
